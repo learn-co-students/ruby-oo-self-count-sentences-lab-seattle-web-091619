@@ -48,6 +48,4 @@ h = 1
   end
   z
 end
-
-
 end
