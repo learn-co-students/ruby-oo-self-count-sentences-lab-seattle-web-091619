@@ -1,1 +1,24 @@
-i am a fucking idiot. i can't undertand anything and i am bound to fail. i'll end up being a server for the  rest of m life
+  
+require 'pry'
+
+class String
+
+  def sentence?
+    self.end_with?('.')
+  end
+
+  def question?
+    self.end_with?('?')
+
+  end
+
+  def exclamation?
+    self.end_with?('!')
+
+  end
+
+  def count_sentences
+    self.split(/[.?!]+/).length
+    #binding.pry
+  end
+end
